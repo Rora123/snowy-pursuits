@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'HaloHandletter';
+	src: url('./HaloHandletter.eot');
+	src: local('HaloHandletter'), url('./HaloHandletter.woff') format('woff'), url('./HaloHandletter.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_67310">Text with this font applied</p> */
+.fontsforweb_fontid_67310 {
+	font-family: 'HaloHandletter' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Snowy Pursuits</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="custom.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav id="navMenu">
+	
+	<div id="overlay"><div id="overlayCont"><div tabindex="0" class="panel panel-default guideText" id="guideText"></div><button type="button" class="prev" onclick="overlayPrev()">Previous
+	</button><button type="button" class="next" onclick="overlayNext()">Next</button></div>
+	</div><nav class="navbar navbar-default navbar-static-top" id="headerTop" >
+		<div class="container-fluid">
+		<div class="navbar-header header">
+		<a class="navbar-brand jsLink" id="headerName" onclick="skipForm()">Snowy Pursuits</a>
+		</div>
+		</div>
+	</nav>`;
+
+	</nav>
+
+	<div class="container-fluid">
+		<div class="panel panel-default formCenter">
+		<center><h1>Snowy Pursuits</h1>
+		<div class="formText">
+		<p>Welcome to our website. Here we intend to give people not well versed at the snow a personal guide 
+		towards getting your vacation right.</p>
+		<p>To start you off we would first like you to fill
+		out this form which will guide you through our website depending on your selections.</p>
+		<p>Otherwise if you are already confident about the slopes feel free to skip it. The guide can be hidden or revealed at anytime 
+		and you can resubmit a new form if you ever want more help.</p>
+		<button onclick="skipForm()" id="skipForm" class="btn btn-default form">Skip Form</button>
+		<form id="skiForm"></form>
+		</div>
+			<div class="form-group formS">
+			  <label for="favStateForm"><h2>Which Country do you live in?</h2></label>
+			  <select form="skiForm" class="form-control" id="homeCountryForm">
+			  <option value="0">No Answer</option>
+			  	<option value="australia">Australia</option>
+			    <option value="america">America</option>
+			    <option value="canada">Canada</option>
+			    <option value="japan">Japan</option>
+			  </select>
+			</div>
+			<div class="form-group formS">
+			  <label for="ownGearForm"><h2>Are you planning on going to a foreign country?</h2></label>
+			  <select form="skiForm" class="form-control" id="foreignForm">
+			  	<option value="No">No</option>
+			    <option value="Yes">Yes</option>
+			  </select>
+			</div>
+			<div class="form-group formS">
+			  <label for="skiForm"><h2>How many times have you been to the snow before?</h2></label>
+			  <select form="skiForm" class="form-control" id="timesSkiForm">
+			  	<option value="0">0</option>
+			    <option value="1">1-3</option>
+			    <option value="2">4+</option>
+			  </select>
+			</div>
+			<div class="form-group formS">
+			  <label for="ownGearForm"><h2>Do you have your own gear?</h2></label>
+			  <select form="skiForm" class="form-control" id="ownGearForm">
+			  	<option value="No">No</option>
+			    <option value="Yes">Yes</option>
+			  </select>
+			</div>
+			<div class="form-group formS">
+			  <label for="knowStayForm"><h2>Do you know where you are going?</h2></label>
+			  <select form="skiForm" class="form-control" id="locationForm">
+			  	<option value="No">No</option>
+			    <option value="Yes">Yes</option>
+			  </select>
+			</div>
+			<div class="form-group formS">
+			  <label for="favEatForm"><h2>Are you familiar with food in the area?</h2></label>
+			  <select form="skiForm" class="form-control" id="favEatForm">
+			  	<option value="No">No (or not sure where I'm currently going)</option>
+			    <option value="Yes">Yes</option>
+			  </select>
+			</div>
+			<div class="form-group formS">
+			  <label for="favEatForm"><h2>Have you planned where you are staying?</h2></label>
+			  <select form="skiForm" class="form-control" id="stayForm">
+			  	<option value="No">No (or not sure where I'm currently going)</option>
+			    <option value="Yes">Yes</option>
+			  </select>
+			</div>
+			<div class="form-group formS">
+			  <label for="favStateForm"><h2>Do you speak languages other than English?</h2></label>
+			  <select form="skiForm" class="form-control" id="langForm">
+			  	<option value="no">No</option>
+			    <option value="japanese">Japanese</option>
+			  </select>
+			</div>
+			<div class="form-group formS">
+			  <label for="favStateForm"><h2>Select any sports that you are familiar with</h2></label>
+			  <div form="skiForm" class="checkbox">
+			  	<label><input type="checkbox" id="surf" value=""><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>Surfing</label>
+			  	<label><input type="checkbox" id="skate" value=""><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>SkateBoarding</label>
+			  	<label><input type="checkbox" id="ice" value=""><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>Ice-Skating</label>
+			  	<label><input type="checkbox" id="roll" value=""><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>Roller Blading</label>
+			  	<label><input type="checkbox" id="sBoard" value=""><span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>SnowBoarding</label>
+			  </div>
+			</div>
+			<div></div>
+			<button form="skiForm" onclick="closeForm(); return false;" id="skipForm" class="btn btn-default form">Submit Form</button>
+		</div>
+		
+	</div>
+	<nav id="footer"></nav>
+	<script src="formScripts.js"></script>
+</body>
+</html>
